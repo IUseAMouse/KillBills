@@ -19,13 +19,10 @@ Pour que le projet se lance de A à Z (bien que vous disposiez des données), il
 - database
 - port
 
-**Il n'est pas nécessaire de faire appel à ce module pour lancer le projet**
-
 ## Module Processing
 
 Le module Processing joue un rôle crucial dans le traitement des données brutes collectées. Il effectue différentes étapes de transformation sur ces données afin de les rendre exploitables pour d'autres tâches. Parmi les transformations effectuées, on retrouve l'utilisation d'un modèle d'extraction syntaxique/sémantique d'embeddings. Ce modèle permet de capturer les informations contextuelles des données, ce qui facilite leur utilisation ultérieure.
 
-**Il n'est pas nécessaire de faire appel à ce module pour lancer le projet**
 
 ## Module Demo
 
