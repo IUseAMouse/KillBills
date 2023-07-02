@@ -11,7 +11,7 @@ En utilisant les informations de connexion extraites de la variable d'environnem
 **COMMENT LANCER LE PROJET**
 Pour que les informations de connexion de soient pas publiques, je l'ai ai cachées dans une variable d'environnement que je n'ai naturellement pas postée sur le repo.
 
-Pour que le projet se lance de A à Z (bien que vous disposez des données), il vous suffit de mettre ces informations dans un fichier .env dans le répertoire du projet sous les noms suivants:
+Pour que le projet se lance de A à Z (bien que vous disposiez des données), il vous suffit de mettre ces informations dans un fichier .env dans le répertoire du projet sous les noms suivants:
 
 - HOST
 - user_name
