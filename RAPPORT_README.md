@@ -8,6 +8,17 @@ Le module Loader est responsable de la connexion à la base de données POSTGRE 
 
 En utilisant les informations de connexion extraites de la variable d'environnement, le module Loader établit une connexion sécurisée à la base de données POSTGRE et récupère les données requises pour le reste du traitement. Cela garantit que les informations sensibles ne sont pas exposées dans le code source et que les paramètres de connexion peuvent être facilement modifiés en fonction de l'environnement d'exécution.
 
+**COMMENT LANCER LE PROJET**
+Pour que les informations de connexion de soient pas publiques, je l'ai ai cachées dans une variable d'environnement que je n'ai naturellement pas postée sur le repo.
+
+Pour que le projet se lance de A à Z (bien que vous disposez des données), il vous suffit de mettre ces informations dans un fichier .env dans le répertoire du projet sous les noms suivants:
+
+- HOST
+- user_name
+- password
+- database
+- port
+
 **Il n'est pas nécessaire de faire appel à ce module pour lancer le projet**
 
 ## Module Processing
