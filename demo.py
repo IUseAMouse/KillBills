@@ -27,6 +27,10 @@ def random_set():
 
 
 def create_clusters_GMM(number_of_clusters,points):
+    """
+    Créé des clusters en mélange de gaussiennes 
+    à partir des embeddings d'un Word2Vec
+    """
     gmm = GaussianMixture(n_components=number_of_clusters, random_state=0, n_init=10).fit(points)
     labels = gmm.predict(X)
     l_array = np.array([[label] for label in labels])
@@ -35,6 +39,10 @@ def create_clusters_GMM(number_of_clusters,points):
 
 
 def create_clusters_dbscan(points):
+    """
+    Créé des clusters par analyse de densité
+    à partir des embeddings d'un Word2Vec
+    """
     db = DBSCAN(eps=3).fit(points)
     l_array = np.array([[label] for label in db.labels_])
     clusters = np.append(points,l_array,axis=1)
@@ -43,6 +51,9 @@ def create_clusters_dbscan(points):
 
 
 def train_classifier(train, clf):
+    """
+    Entraine n'importe quel classifieur sklearn
+    """
     X = np.array([list(arr) for arr in train['Embedding']])
     y = np.array([cluster for cluster in train['GMM_Cluster']])
 
